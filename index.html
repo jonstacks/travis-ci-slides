@@ -65,7 +65,26 @@
 				</section>
 
 				<section>
-					<h2>This sounds pretty great....how do I use it?</h2>
+					<h2>This sounds pretty great...</h2>
+					<h2><a href="https://docs.travis-ci.com">how do I use it?</a></h2>
+					<pre>
+					  <code>
+# .travis.yml
+---
+language: python
+python:
+  - "3.2"
+  - "3.3"
+  - "3.4"
+install:
+  - pip install -r requirements/development.txt
+before_script:
+  - python manage.py migrate
+  - flake8 fibonacci
+script:
+  - python manage.py test
+					  </code>
+					</pre>
 					<ul>
 						<li class="fragment"></li>
 					</ul>
