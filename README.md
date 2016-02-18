@@ -3,6 +3,7 @@
 A Slide deck of my experience using Travis CI. Prepared for a devops
 community meetup.
 
+View the slides [here](https://jonstacks13.github.io/travis-ci-slides)
 
 ## Tools
 
